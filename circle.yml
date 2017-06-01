@@ -8,4 +8,10 @@ deployment:
       thanhnb6719:
         application_root: /
         region: ap-southeast-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: iamuser-thanhnb6719
+            key_pattern: thanhnb6719-{BRANCH}-{SHORT_COMMIT}
         deployment_group: thanhnb6719-group-deploy
+
