@@ -1,3 +1,11 @@
 test:
   override:
     - php ./test.php
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      thanhnb6719:
+        application_root: /
+        region: ap-southeast-1
+        deployment_group: thanhnb6719-group-deploy
